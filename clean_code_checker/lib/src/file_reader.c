@@ -1,3 +1,13 @@
+/**
+ * @file file_reader.c
+ * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
+ * @brief 
+ * @version 0.1
+ * @date 2025-02-05
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "file_reader.h"
 #include <stdlib.h>
 

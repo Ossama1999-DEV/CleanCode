@@ -1,3 +1,12 @@
+/**
+ * @file json_formatter.c
+ * @brief Implementation of the JSON formatting logic
+ * @version 0.1
+ * @date 2025-02-05
+ * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
+ * 
+ * 
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "json_formatter.h"
