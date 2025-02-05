@@ -4,7 +4,8 @@
 The CleanCode project is designed to analyze source code files and check for adherence to clean code practices. It provides a set of tools to read files, analyze their content, and format the results in JSON.
 
 ## Project Structure
-```
+
+```plaintext
 clean_code_checker/
 ├── src/
 │   ├── main.c
@@ -27,7 +28,7 @@ clean_code_checker/
 └── README.md
 ```
 
-## Files Description
+## File Descriptions
 - **src/main.c**: Entry point of the application. Initializes the clean code checker.
 - **src/file_reader.c**: Implements functions for reading files (open, read, close).
 - **src/file_reader.h**: Header file declaring functions and types for file reading.
@@ -42,16 +43,22 @@ clean_code_checker/
 - **README.md**: Documentation for setup instructions and usage guidelines.
 
 ## Setup Instructions
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Use CMake to configure the project:
+1. Clone the repository:
+   ```sh
+   git clone <repository_url>
    ```
+2. Navigate to the project directory:
+   ```sh
+   cd clean_code_checker
+   ```
+3. Use CMake to configure the project:
+   ```sh
    mkdir build
    cd build
    cmake ..
    ```
 4. Build the project:
-   ```
+   ```sh
    make
    ```
 
