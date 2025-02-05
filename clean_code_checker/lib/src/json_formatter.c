@@ -1,18 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "json_formatter.h"
-#include "analyzer.h" // Include this header to recognize AnalysisResult
+#include "analyzer.h"
 
-char* format_json(AnalysisResult result) {
-    // Adjust the size of the JSON report based on the actual fields in AnalysisResult
-    char *json_report = (char*)malloc(100); // Adjust size as needed
-    if (!json_report) {
-        fprintf(stderr, "Memory allocation error\n");
-        return NULL;
+int format_json(const char *filename, AnalysisResult result) {
+    FILE *file = fopen(filename, "w");
+    if (!file) {
+        perror("Error opening JSON file");
+        return -1;
     }
 
-    // Format the JSON report based on the fields in AnalysisResult
-    sprintf(json_report, "{\n  \"some_metric\": %d\n}\n", result.some_metric);
-    return json_report;
+    fprintf(file, "{\n");
+    fprintf(file, "  \"total_issues\": %d,\n", result.total_issues);
+    fprintf(file, "  \"issues\": [\n");
+
+    for (int i = 0; i < result.total_issues; i++) {
+        fprintf(file, "    { \"line\": %d, \"message\": \"%s\" }%s\n",
+                result.issues[i].line, result.issues[i].message,
+                (i < result.total_issues - 1) ? "," : "");
+    }
+
+    fprintf(file, "  ]\n");
+    fprintf(file, "}\n");
+
+    fclose(file);
+    return 0;
 }

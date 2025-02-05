@@ -1,8 +1,8 @@
 #ifndef JSON_FORMATTER_H
 #define JSON_FORMATTER_H
 
-#include "analyzer.h" // Include the analyzer header for AnalysisResult
+#include "analyzer.h"
 
-char* format_json(AnalysisResult result);
+int format_json(const char *filename, AnalysisResult result);
 
-#endif // JSON_FORMATTER_H
+#endif
