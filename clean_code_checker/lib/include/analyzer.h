@@ -1,5 +1,10 @@
-// This file declares the functions and types used in analyzer.c
-
+/**
+ * @file analyzer.h
+ * @brief Header file for the code analysis logic
+ * @version 0.1
+ * @date 2025-02-05
+ * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
+ */
 #ifndef ANALYZER_H
 #define ANALYZER_H
 
