@@ -1,3 +1,10 @@
+/**
+ * @file main.c
+ * @brief  Main file to analyze the source code and generate a JSON report
+ * @version 0.1
+ * @date 2025-02-05
+ * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
