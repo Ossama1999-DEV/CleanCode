@@ -1,0 +1,1 @@
+void format_json(const char *filename, const char *data);

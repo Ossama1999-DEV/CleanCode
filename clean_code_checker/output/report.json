@@ -1,0 +1,30 @@
+{
+  "report": {
+    "status": "success",
+    "message": "Clean code analysis completed.",
+    "files": [
+      {
+        "file_name": "example.c",
+        "issues": [
+          {
+            "line": 10,
+            "description": "Variable name 'x' is not descriptive."
+          },
+          {
+            "line": 15,
+            "description": "Function 'foo' is too complex."
+          }
+        ]
+      },
+      {
+        "file_name": "example.cpp",
+        "issues": [
+          {
+            "line": 5,
+            "description": "Class 'Bar' does not follow naming conventions."
+          }
+        ]
+      }
+    ]
+  }
+}
