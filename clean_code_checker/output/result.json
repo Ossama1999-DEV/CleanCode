@@ -1,0 +1,7 @@
+{
+  "total_issues": 2,
+  "issues": [
+    { "line": 7, "message": "Incorrect macro naming convention: 'oussama'." },
+    { "line": 10, "message": "Variable name too long: 'helosalamao3alaykjomhbabio'." }
+  ]
+}
