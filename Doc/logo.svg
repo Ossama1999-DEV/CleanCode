@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circles representing connectivity -->
+  <circle cx="200" cy="150" r="120" fill="none" stroke="#e0e0e0" stroke-width="2" />
+  <circle cx="200" cy="150" r="100" fill="none" stroke="#d0d0d0" stroke-width="2" />
+  
+  <!-- Dynamic curved lines -->
+  <path d="M 100,150 Q 200,50 300,150" fill="none" stroke="#2C7A7B" stroke-width="8" />
+  <path d="M 120,180 Q 200,280 280,180" fill="none" stroke="#38B2AC" stroke-width="8" />
+  
+  <!-- Abstract code brackets -->
+  <path d="M 140,100 L 160,120 L 140,140" fill="none" stroke="#2C7A7B" stroke-width="4" />
+  <path d="M 260,100 L 240,120 L 260,140" fill="none" stroke="#38B2AC" stroke-width="4" />
+  
+  <!-- Digital dots -->
+  <circle cx="140" cy="100" r="4" fill="#2C7A7B" />
+  <circle cx="260" cy="140" r="4" fill="#38B2AC" />
+  <circle cx="200" cy="120" r="4" fill="#2C7A7B" />
+  
+  <!-- Text elements -->
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#2C7A7B" font-weight="bold">PURE LOGIC</text>
+  <text x="200" y="225" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666666">DEVELOPMENT</text>
+</svg>
