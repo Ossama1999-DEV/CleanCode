@@ -7,11 +7,18 @@
  * 
  * 
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "json_formatter.h"
 #include "analyzer.h"
 
+/**
+ * @brief Format the analysis result as a JSON file
+ * @param filename The name of the JSON file to create
+ * @param result The analysis result to format
+ * @return int 0 on success, -1 on failure
+ */
 int format_json(const char *filename, AnalysisResult result) {
     FILE *file = fopen(filename, "w");
     if (!file) {

@@ -3,7 +3,6 @@
  * @brief Implementation of the code analysis logic
  * @version 0.1
  * @date 2025-02-05
- * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
  * 
  * 
  */
@@ -13,11 +12,15 @@
 #include <ctype.h>
 #include "analyzer.h"
 
-#define MAX_ISSUES 100  // Limit of detected issues
-#define MAX_FUNCTION_NAME_LENGTH 30
-#define MAX_VARIABLE_NAME_LENGTH 20
+#define MAX_ISSUES 100  /**< Limit of detected issues */
+#define MAX_FUNCTION_NAME_LENGTH 30 /**< Maximum length for function names */
+#define MAX_VARIABLE_NAME_LENGTH 20 /**< Maximum length for variable names */
 
-// Function to check if a function name follows camelCase
+/**
+ * @brief Check if a function name follows camelCase
+ * @param name The function name to check
+ * @return int 1 if the name is valid, 0 otherwise
+ */
 int is_valid_function_name(const char *name) {
     if (!islower(name[0])) return 0;  // Must start with a lowercase letter
     for (int i = 1; name[i]; i++) {
@@ -26,12 +29,20 @@ int is_valid_function_name(const char *name) {
     return 1;
 }
 
-// Function to check if a variable name is too long
+/**
+ * @brief Check if a variable name is too long
+ * @param name The variable name to check
+ * @return int 1 if the name is too long, 0 otherwise
+ */
 int is_long_variable_name(const char *name) {
     return (strlen(name) > MAX_VARIABLE_NAME_LENGTH);
 }
 
-// Function to analyze the source code
+/**
+ * @brief Analyze the source code
+ * @param code The source code to analyze
+ * @return AnalysisResult The result of the analysis
+ */
 AnalysisResult analyze_code(const char *code) {
     AnalysisResult result;
     result.total_issues = 0;
@@ -89,6 +100,10 @@ AnalysisResult analyze_code(const char *code) {
     return result;
 }
 
+/**
+ * @brief Free dynamically allocated memory in AnalysisResult
+ * @param result The result structure to free
+ */
 void free_analysis_result(AnalysisResult *result) {
     if (result->issues) {
         free(result->issues);
