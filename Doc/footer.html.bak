@@ -1,0 +1,10 @@
+<footer style="background-color: #f6f8fa; padding: 20px; text-align: center; border-top: 1px solid #e1e4e8;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <p style="margin: 0; color: #586069;">© 2023 Your Company. All rights reserved.</p>
+        <nav style="margin-top: 10px;">
+            <a href="/terms" style="margin: 0 10px; color: #0366d6; text-decoration: none;">Terms</a>
+            <a href="/privacy" style="margin: 0 10px; color: #0366d6; text-decoration: none;">Privacy</a>
+            <a href="/contact" style="margin: 0 10px; color: #0366d6; text-decoration: none;">Contact</a>
+        </nav>
+    </div>
+</footer></nav>
