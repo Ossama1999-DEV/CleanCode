@@ -3,8 +3,7 @@
  * @brief Header file for file reading functions
  * @version 0.1
  * @date 2025-02-05
- * 
- * 
+ * @author DBIBIH OUSSAMA
  */
 
 #ifndef FILE_READER_H

@@ -3,8 +3,7 @@
  * @brief Header file for the code analysis logic
  * @version 0.1
  * @date 2025-02-05
- * 
- * 
+ * @author DBIBIH OUSSAMA
  */
 
 #ifndef ANALYZER_H
