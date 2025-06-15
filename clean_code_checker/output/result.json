@@ -1,7 +1,9 @@
 {
-  "total_issues": 2,
+  "total_issues": 4,
   "issues": [
-    { "line": 7, "message": "Incorrect macro naming convention: 'oussama'." },
-    { "line": 10, "message": "Variable name too long: 'helosalamao3alaykjomhbabio'." }
+    { "line": 8, "message": "Incorrect macro naming convention: 'loop'." },
+    { "line": 11, "message": "Non-compliant function name: 'DoSTUFF'." },
+    { "line": 13, "message": "Variable name too long: 'veryveryveryveryveryveryveryveryLongVariableName'." },
+    { "line": 19, "message": "Non-compliant function name: 'ARR[5]={1,2,3,4,5}; // Nom de variable en majuscule'." }
   ]
 }
