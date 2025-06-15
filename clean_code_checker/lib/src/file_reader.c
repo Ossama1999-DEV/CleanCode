@@ -3,8 +3,7 @@
  * @brief Implementation of file reading functions
  * @version 0.1
  * @date 2025-02-05
- * 
- * 
+ * @author DBIBIH OUSSAMA
  */
 
 #include "file_reader.h"

@@ -3,9 +3,13 @@
  * @brief Implementation of the code analysis logic
  * @version 0.1
  * @date 2025-02-05
- * 
- * 
+ * @author DBIBIH OUSSAMA
  */
+
+ /**
+ * @example main.c
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,9 +20,10 @@
 #define MAX_FUNCTION_NAME_LENGTH 30 /**< Maximum length for function names */
 #define MAX_VARIABLE_NAME_LENGTH 20 /**< Maximum length for variable names */
 
+
 /**
- * @brief Check if a function name follows camelCase
- * @param name The function name to check
+ * @brief  Check if a function name follows camelCase
+ * @param  name The function name to check
  * @return int 1 if the name is valid, 0 otherwise
  */
 int is_valid_function_name(const char *name) {

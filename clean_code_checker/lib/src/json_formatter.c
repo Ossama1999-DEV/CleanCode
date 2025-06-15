@@ -4,8 +4,6 @@
  * @version 0.1
  * @date 2025-02-05
  * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
- * 
- * 
  */
 
 #include <stdio.h>

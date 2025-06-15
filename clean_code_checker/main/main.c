@@ -5,6 +5,11 @@
  * @date 2025-02-05
  * @author DBIBIH OUSSAMA (oussama.dbibih@viacesi.fr)
  */
+
+ /**
+ * @example main.c
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -12,7 +17,7 @@
 #include "json_formatter.h"
 #include "analyzer.h"
 
-#define OUTPUT_DIR "C:\\Users\\asus\\OneDrive\\Bureau\\Perso\\CleanCode\\clean_code_checker\\output\\"
+#define OUTPUT_DIR "/home/debian/repo/CleanCode/clean_code_checker/output/"
 
 int main(int argc, char *argv[]) {
     // Check the number of arguments
