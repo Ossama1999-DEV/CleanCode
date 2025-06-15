@@ -20,7 +20,7 @@ set(HEADERS
 
 # Ajouter la bibliothèque partagée
 add_library(clean_code_checker_lib SHARED ${SOURCES})
-set_target_properties(clean_code_checker_lib PROPERTIES OUTPUT_NAME "clean_code_checker_lib")
+set_target_properties(clean_code_checker_lib PROPERTIES OUTPUT_NAME "_cleanCodeChecker")
 
 # Inclure les répertoires d'en-tête
 target_include_directories(clean_code_checker_lib PRIVATE ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/lib/include)  # Update this line
